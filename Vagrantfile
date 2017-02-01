@@ -4,6 +4,6 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "vagrantbox"
   config.vm.provider "virtualbox" do |vb|
     vb.customize ["modifyvm", :id, "--cpuexecutioncap", "50", "--cpus", "1"]
-    vb.memory = 1024
+    vb.memory = 2048
   end
 end
